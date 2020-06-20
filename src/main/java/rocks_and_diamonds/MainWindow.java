@@ -6,6 +6,7 @@ import java.util.List;
 import javafx.application.Application;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class MainWindow extends Application {
 
@@ -30,6 +31,10 @@ public class MainWindow extends Application {
 		appWindow.getIcons().add(new Image("/Pictures/MainIcon.png"));
 		appWindow.setTitle("Rocks & Diamonds by £ukasz & Krzysztof");
 		appWindow.setResizable(false);
+		appWindow.initStyle(StageStyle.DECORATED);
+		appWindow.setX(614);
+		appWindow.setY(225);
+		appWindow.setOpacity(1);
 		appWindow.show();
 
 	}
