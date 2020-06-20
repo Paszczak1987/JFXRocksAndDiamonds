@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javafx.application.Application;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class MainWindow extends Application{
@@ -26,7 +27,8 @@ public class MainWindow extends Application{
 		
 		
 		changeState(GameStates.ENTER_PLAYER_NAME);
-		appWindow.setTitle("JFXSnake_FXML");
+		appWindow.getIcons().add(new Image("/Pictures/MainIcon.png"));
+		appWindow.setTitle("Rocks & Diamonds by Lukasz & Krzysztof");
 		appWindow.setResizable(false);
 		appWindow.show();
 		
