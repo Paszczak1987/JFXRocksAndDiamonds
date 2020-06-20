@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javafx.application.Application;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class MainWindow extends Application{
@@ -25,8 +26,10 @@ public class MainWindow extends Application{
 		gameStates.add(new GameState(this, GameStates.QUIT,  this.getClass().getResource("/FXML/QUIT.fxml")));
 		
 		
+		
 		changeState(GameStates.ENTER_PLAYER_NAME);
-		appWindow.setTitle("JFXSnake_FXML");
+		appWindow.setTitle("RocksAndDiamonds");
+		appWindow.getIcons().add(new Image("/Pictures/MainIcon.png"));
 		appWindow.setResizable(false);
 		appWindow.show();
 		
