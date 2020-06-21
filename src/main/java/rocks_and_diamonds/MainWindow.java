@@ -28,7 +28,7 @@ public class MainWindow extends Application {
 		gameStates.add(new GameState(this, GameStates.QUIT, this.getClass().getResource("/FXML/QUIT.fxml")));
 
 		changeState(GameStates.ENTER_PLAYER_NAME);
-		appWindow.getIcons().add(new Image("/Pictures/MainIcon.png"));
+		appWindow.getIcons().add(new Image("/Pictures/MainIcon.jpeg"));
 		appWindow.setTitle("Rocks & Diamonds by £ukasz & Krzysztof");
 		appWindow.setResizable(false);
 		appWindow.initStyle(StageStyle.DECORATED);
